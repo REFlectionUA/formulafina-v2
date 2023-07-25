@@ -1,62 +1,87 @@
-<style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        margin: 0;
+        font-family: SF Pro Display;
+        font-style: normal; }
 
-body {
-margin: 0;
-font-family: SF Pro Display;
-font-style: normal; }
+        p { 
+        margin: 0; }
 
-p { 
-margin: 0; }
+        .product-section {
+            /* margin: 0 calc(80rem / 16); */
+            margin: 0 80px;
+            max-height: 100vh;
+            padding: 32px;
+        }
 
-.product-section {
-/* margin: 0 calc(80rem / 16); */
-margin: 0 80px;
-max-height: 100vh;
-padding: 32px;
-}
+        .wrapper-section{
+            display: grid; 
+            gap: 50px;
+            grid-template-columns: 0.9fr 1fr;
 
-.wrapper-section{
-    display: flex; 
-    gap: 50px;
-    flex-wrap: wrap;
-}
+        }
 
-.item-img{
-    flex: 1 0 340px;
-    max-width: 100%;
-    /* height: auto; */
-    max-height: auto;
-}
+        .img-head{
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 16px;
 
-.item{
-    flex: 1 0 260px;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-@media screen and (max-width: 1000px){
-    .item-img{
-    flex: 1 0 340px;
-    max-width: 100%;
-    /* height: auto; */
-    max-height: 655px;
-}
-}
+        .item-img{
+            padding: 24px;
+            max-width: 100%;
+            /* height: auto; */
+            max-height: auto;
+        }
 
-</style>
+        .item{
+            flex: 1 0 260px;
+        }
 
+        @media screen and (max-width: 780px){
+            .wrapper-section{
+                gap: 16px;
+                grid-template-columns: 1fr;
+            }
+
+            .product-section {
+            /* margin: 0 calc(80rem / 16); */
+            margin: 0;
+            padding: 20px;
+            height: 100%;
+            display: table;
+            }
+        
+            .item-description-button{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
 <br></br>
 
 <body>
 <div class="product-section" style="background-color: #384837; border-radius: 24px;" >
     <div class="wrapper-section">
-        <img src="/img/title.png" alt="" class="item-img" style="border-radius: 16px;">
+        <div class="img-head">    
+            <img src="https://i.ibb.co/4RLt0hW/Rectangle-2198.png" alt="" class="item-img" style="border-radius: 16px;">
+        </div>
         <div class="item" style="display: flex; flex-direction: column; gap: 24px;">
             <div class="item-title">
-                <p class="item-title-info" style="font-size: 40px; font-weight: 600; color: #fff;" >Clean Forte</p>
-                <p class="item-subtitle-info" style="font-size: 20px; font-weight: 500; color: #3C9F36; ">Bestellen Sie noch heute mit 50% RABATT</p>
+                <p class="item-title-info" style="font-size: calc(24px + 16 *(100vw / 1440)); font-weight: 600; color: #fff;" >Clean Forte</p>
+                <p class="item-subtitle-info" style="font-size: calc(16px + 4 *(100vw / 1440)); font-weight: 500; color: #3C9F36; ">Bestellen Sie noch heute mit 50% RABATT</p>
             </div>
             <div class="item-description-info">
-                <p class="item-description-text" style="color:#fff; font-size: calc(12px + 6 *(50vw / 1460)); font-weight: 400; line-height: 32px;">Clean Forte ist ein flüssiges Nahrungsergänzungsmittel, das das Beste aus der Natur in Form von leistungsstarken natürlichen Extrakten mit entzündungshemmenden, entgiftenden und antibakteriellen Eigenschaften zur Verbesserung der Verdauungs- und Darmfunktion vereint:</p>
-                <ul class="item-description-list" style="font-size: calc(12px + 2 *(50vw / 1460)); color: #C6C6C6; font-weight: 400; line-height: 28px; ">
+                <p class="item-description-text" style="color:#fff; font-size: calc(14px + 2 *(100vw / 1440)); font-weight: 400; line-height: 32px;">Clean Forte ist ein flüssiges Nahrungsergänzungsmittel, das das Beste aus der Natur in Form von leistungsstarken natürlichen Extrakten mit entzündungshemmenden, entgiftenden und antibakteriellen Eigenschaften zur Verbesserung der Verdauungs- und Darmfunktion vereint:</p>
+                <ul class="item-description-list" style="font-size: calc(12px + 2 *(100vw / 1440)); color: #C6C6C6; font-weight: 400; line-height: 28px; ">
                     <li>Lindert Blähungen und Völlegefühl</li>
                     <li>Verbessert die Verdauungsfunktion</li>
                     <li>Unterstützt bei der Bekämpfung von Parasiten und Bakterien</li>
@@ -64,8 +89,8 @@ padding: 32px;
                     <li>Beruhigt das Verdauungssystem</li>
                     <li>Sicher und wirksam</li>
                 </ul>
-                <p class="item-description-text" style="color:#fff; font-size: calc(12px + 6 *(50vw / 1460)); font-weight: 400; line-height: 32px;">Die natürliche Formel enthält: Exktrakte von Schwarzwalnussblättern, Wermut, wildem Basilikum, Passionsblumen und Nelken. Diese Inhaltsstoffe unterstützen gemeinsam das Verdauungssystem.</p>
-                <p class="item-description-sub-text" style="color: #EDBE9D; text-align: center; font-weight: 600; line-height: 28px; text-transform: uppercase; font-size: 14px; ">Nutzen Sie unser Angebot, um dieses Produkt kennen zu lernen!</p>
+                <p class="item-description-text" style="color:#fff; font-size: calc(14px + 2 *(100vw / 1440)); font-weight: 400; line-height: 32px;">Die natürliche Formel enthält: Exktrakte von Schwarzwalnussblättern, Wermut, wildem Basilikum, Passionsblumen und Nelken. Diese Inhaltsstoffe unterstützen gemeinsam das Verdauungssystem.</p>
+                <p class="item-description-sub-text" style="color: #EDBE9D; text-align: center; font-weight: 600; line-height: 28px; text-transform: uppercase; font-size: calc(12px + 2 *(100vw / 1440)); ">Nutzen Sie unser Angebot, um dieses Produkt kennen zu lernen!</p>
             </div>
             <a href="#" class="item-description-button" style="border-radius: 8px; background: #3C9F36; color: #fff; align-items: center; text-align: center; text-decoration: none; padding: 24px 42px;">ICH MÖCHTE MEIN ANGEBOT SEHEN!</a>
         </div>
