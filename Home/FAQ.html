@@ -1,0 +1,151 @@
+<style>
+body{
+    margin: 0;
+    font-family: SF Pro Display;
+    font-style: normal;
+    color:#2D2D2D ;
+    background: #F6F6F6;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.faq_list{
+    position: relative;
+    color: #2D2D2D; 
+}
+.faq_item{
+    box-sizing: border-box;
+    border-bottom: 1px solid #2D2D2D;
+    padding: 24px 24px 24px 24px;
+}
+.faq_item_title{
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    position: relative;
+
+}
+.faq_show_all .faq_item_title{
+    font-weight: 900;
+    margin-top: 16px;
+}
+.faq_item_title_inner{
+    position: relative;
+    padding: 0 60px 0 0;
+    cursor: pointer;
+}
+.faq_item_title_inner:hover:before{
+    transform: translateY(1px);
+}
+.faq_item_title_inner:before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background: url(/icons/icon-line-plus-circle.svg) no-repeat center center;
+    cursor: pointer;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+.faq_item_title_inner.open:before{
+    background: url(/icons/icon-line-minus-circle.svg) no-repeat center center;
+}
+.faq_item_body{
+    font-size: 16px;
+    padding-top: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #6F6F6F;
+    box-sizing: border-box;
+    display: none;
+}
+
+</style>
+
+
+<br>
+<br>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+<div class="wrapper">
+    <div class="title" style="margin-bottom: 64px;">
+        <h1 class="title-faq" style="margin: 0; margin-bottom: 8px; text-align: center;font-size: 32px;font-weight: 600;">HÄUFIGE FRAGEN</h2>
+        <h2 class="subtitle-faq" style="margin: 0; text-align: center;font-size: 14px;font-weight: 600;color: #6F6F6F;">Bevor Sie uns kontaktieren, lesen Sie bitte die folgenden Antworten sorgfältig durch:</h5>
+    </div>
+    <div class="faq_list">
+        <div class="faq_item">
+            <div class="faq_item_title">
+                <div class="faq_item_title_inner">
+                    Wie läuft der Kaufprozess ab?
+                </div>
+            </div>
+            <div class="faq_item_body">
+                Einkaufen in unserem Shop ist unkompliziert: Fügen Sie die gewünschten Produkte in den Warenkorb, geben Sie Ihre persönlichen Daten ins Kaufformular ein und ein Vertreter wird sich zur Kaufbestätigung melden. Vor Abschluss wird unser Team Ihre Kontaktdaten telefonisch verifizieren und über Werbeaktionen, Lieferzeiten und mögliche Fragen informieren. Bei mehreren Produkten kann der Kontakt durch verschiedene Vertriebsmitarbeiter erfolgen, um alle Käufe zu bestätigen.
+            </div>
+        </div>
+        <div class="faq_item">
+            <div class="faq_item_title">
+                <div class="faq_item_title_inner">
+                    Wie läuft der Versand ab?
+                </div>
+            </div>
+            <div class="faq_item_body">
+                Unser Unternehmen verfügt über lokale Händler mit Lagerbestand der angebotenen Produkte. Der Versand erfolgt über eine örtliche Spedition. Die Zeit bis zum Eintreffen der Ware bei Ihnen beträgt im Allgemeinen zwischen 48 und 72 Stunden, kann je nach Wohnort aber variieren.
+            </div>
+        </div>
+        <div class="faq_item">
+            <div class="faq_item_title">
+                <div class="faq_item_title_inner">
+                    Wie läuft die Bezahlung ab?
+                </div>
+            </div>
+            <div class="faq_item_body">
+                Zu Ihrer Sicherheit und der unseres Lieferteams bevorzugen wir Barzahlungen bei Lieferung Ihres Produkts. Auf diese Weise können Sie vor der Zahlung überprüfen, ob Ihre Sendung vollständig ist und Sie die gewünschten Produkte erhalten haben.
+            </div>
+        </div>
+        <div class="faq_item">
+            <div class="faq_item_title">
+                <div class="faq_item_title_inner">
+                    Akzeptiert ihr Kreditkarten?
+                </div>
+            </div>
+            <div class="faq_item_body">
+                Nein, derzeit bieten wir zu Ihrer Sicherheit und der unseres Teams nur den Kauf per Nachnahme an.
+            </div>
+        </div>
+        <div class="faq_item">
+            <div class="faq_item_title">
+                <div class="faq_item_title_inner">
+                    Warum habe ich Anrufe von verschiedenen Vertretern erhalten?
+                </div>
+            </div>
+            <div class="faq_item_body">
+                In einigen Fällen kooperieren wir mit verschiedenen Händlern oder Logistikzentren, um den Kunden die besten Marktpreise zu gewährleisten. Aus diesem Grund erhalten Sie möglicherweise Anrufe von verschiedenen Vertretern, um Ihren Kauf zu bestätigen.
+            </div>
+        </div>
+        <div class="faq_item">
+            <div class="faq_item_title">
+                <div class="faq_item_title_inner">
+                    Warum erhalte ich zwei Sendungen statt einer?
+                </div>
+            </div>
+            <div class="faq_item_body">
+                In einigen Fällen nutzen wir verschiedene Händler und/oder Logistikzentren, um die besten Preise zu gewährleisten. Aus diesem Grund erhalten Sie möglicherweise mehrere Pakete, wenn Sie beispielsweise mehrere Produkte im Sonderangebot gekauft haben.
+            </div>
+        </div>
+</div>
+</body>
+
+<script>
+    $('.faq_item_title_inner').on('click',function(){
+        $(this).parents('.faq_item').find('.faq_item_body').slideToggle(300);
+        $(this).toggleClass('open');
+    });
+</script>

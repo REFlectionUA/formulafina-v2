@@ -1,0 +1,181 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            margin: 0;
+            margin-top: 100px;
+            font-family: SF Pro Display;
+            font-style: normal;
+            color: #2D2D2D;
+            background: #fff;
+        }
+    
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1280px;
+            padding-inline: 1rem;
+        }
+    
+        .reviews-item {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        
+        .reviews-item .item {
+            padding: 24px 16px;
+            border-radius: 16px;
+            background: #FFF;
+            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+        }
+    
+        .item-header {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+        }
+    
+        .item-header_img {
+            margin-bottom: 16px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 100px;
+            aspect-ratio: 1 / 1;
+        }
+    
+        .item-header_img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .item-rate{
+            margin-inline: auto;
+            margin-bottom: 24px;
+        }
+    
+        .text-title{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            margin: 0 0 8px 0;
+        }
+        .text-description{
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 24px;
+            margin: 0 0 24px 0;
+        }
+        .person-name{
+            color: #3C9F36;
+            text-align: center;
+            font-family: SF Pro Display;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+            margin: 0;
+        }
+    
+        @media  (max-width: 768px){
+            .reviews-item {
+                grid-template-columns: 1fr;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title" style="margin-bottom: 64px;">
+            <h1 class="title-faq"
+                style="margin: 0; margin-bottom: 8px; text-align: center;font-size: 32px;font-weight: 600;">WEITERE ERFAHRUNGSBERICHTE</h2>
+                <h2 class="subtitle-faq"
+                    style="margin: 0; text-align: center;font-size: 14px;font-weight: 600;color: #6F6F6F;">Bevor Sie uns
+                    kontaktieren, lesen Sie bitte die folgenden Antworten sorgfältig durch:</h5>
+        </div>
+        <div class="reviews-item">
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header_img ">
+                        <img src="https://picsum.photos/1000/1000?random=1" alt="" >
+                           
+                    </div>
+                    <div class="item-rate" style="">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                    </div>
+                </div>
+                <div class="item-text">
+                    <p class="text-title">Unverzichtbar für einen glücklichen Darm!</p>
+                    <p class="text-description">Man sagt, dass der Darm das zweite Gehirn ist, deswegen ist es wirklich
+                        wichtig, ihn gesund zu halten.</p>
+                </div>
+                <div class="item-person">
+                    <p class="person-name">Christian V.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header_img ">
+                        <img src="https://picsum.photos/1000/1000?random=1" alt=""> 
+                       
+                    </div>
+                    <div class="item-rate">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                    </div>
+                </div>
+                <div class="item-text">
+                    <p class="text-title">Unverzichtbar für einen glücklichen Darm!</p>
+                    <p class="text-description">Man sagt, dass der Darm das zweite Gehirn ist, deswegen ist es wirklich
+                        wichtig, ihn gesund zu halten.</p>
+                </div>
+                <div class="item-person">
+                    <p class="person-name">Christian V.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header_img ">
+                        <img src="https://picsum.photos/1000/1000?random=1" alt="" >
+                      
+                    </div>
+                    <div class="item-rate">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                        <img src="/icons/ic_round-star.svg" alt="star">
+                    </div>
+                </div>
+                <div class="item-text">
+                    <p class="text-title">Unverzichtbar für einen glücklichen Darm!</p>
+                    <p class="text-description">Man sagt, dass der Darm das zweite Gehirn ist, deswegen ist es wirklich
+                        wichtig, ihn gesund zu halten.</p>
+                </div>
+                <div class="item-person">
+                    <p class="person-name">Christian V.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
