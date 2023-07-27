@@ -6,6 +6,7 @@
             box-sizing: border-box;
         }
         body{
+            display: grid;
             margin: 0;
             font-family: SF Pro Display;
             font-style: normal;
@@ -151,17 +152,25 @@
             padding: 24px 0;
             transition: 0.3s;
         }
-
+        
+        .item-button-primary-text {
+            color: #EDBE9D;
+            transition: 0.3s;
+        }
+        
         .item-button-primary:hover{
             border-radius: 8px;
             background: #EDBE9D;
             width: 100%;
             text-align: center;
             padding: 24px 0;
-            color: #fff;
             transition: 0.3s;
-        }
 
+            .item-button-primary-text {
+                color: #fff;
+            }
+        }
+        
         .item-button-main{
             border-radius: 8px;
             background: #3C9F36;
@@ -173,7 +182,7 @@
 
         .item-button-main:hover{
             border-radius: 8px;
-            background: #58b753;
+            background: #305a2e;
             width: 100%;
             text-align: center;
             padding: 24px 0;
@@ -201,6 +210,7 @@
 
         @media  (max-width: 768px){
             .best-item {
+                gap: 24px;
                 grid-template-columns: 1fr;
             }
             
@@ -229,7 +239,7 @@
                 </div>
                     <p class="economy">SIE SPAREN €39</p>
                 <div class="item-button-primary" style="margin-bottom: 24px;">
-                    <a href="" style="color: #EDBE9D;">ICH MÖCHTE MEIN ANGEBOT SEHEN!</a>
+                    <a href="" class="item-button-primary-text">ICH MÖCHTE MEIN ANGEBOT SEHEN!</a>
                 </div>
                 <div class="item-pimary-terms" style="display: flex; gap: 40px;">
                     <div class="terms-lock" style="text-align: center;">
@@ -329,7 +339,7 @@
                 </div>
                     <p class="economy">SIE SPAREN €39</p>
                 <div class="item-button-primary" style="margin-bottom: 24px;">
-                    <a href="" style="text-decoration: none; color: #EDBE9D;">ICH MÖCHTE MEIN ANGEBOT SEHEN!</a>
+                    <a href="" class="item-button-primary-text">ICH MÖCHTE MEIN ANGEBOT SEHEN!</a>
                 </div>
                 <div class="item-pimary-terms" style="display: flex; gap: 40px;">
                     <div class="terms-lock" style="text-align: center;">
